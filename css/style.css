@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #838383;
+}
+
+.tela {
+  border: 1px solid red;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+}
+.tela-produtos {
+  border: 1px solid blue;
+  width: 70%;
+  padding: 0.1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 0.8fr));
+  flex-wrap: wrap;
+  gap: 1rem 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+.tela-produtos-product {
+  border: 1px solid cyan;
+  border-radius: 10px;
+  padding-inline: 0.2rem;
+  text-align: center;
+  height: 250px;
+}
+.tela-produtos-product-pict {
+  border: 1px solid red;
+  height: 50%;
+  width: 70%;
+  margin-inline: auto;
+  margin-bottom: 0.4rem;
+}
+.tela-produtos-product-pict img {
+  height: 100%;
+  object-fit: contain;
+}
+.tela-produtos-product p {
+  font-size: 0.8rem;
+}
+.tela-produtos-product-compra {
+  background-color: #cacaca;
+  margin-block: 0.4rem;
+  padding-block: 0.2rem;
+  border-radius: 10px;
+  width: 50%;
+  margin-inline: auto;
+  cursor: pointer;
+}
+.tela-carinho {
+  border: 1px solid green;
+  width: 30%;
+}
+.tela-carinho-compra {
+  border: 1px solid magenta;
+  height: 80%;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+.tela-carinho-compra-items {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.tela-carinho-compra-items-pict {
+  border: 1px solid red;
+  width: 30%;
+  height: 100%;
+}
+.tela-carinho-compra-items-pict img {
+  border: 1px solid greenyellow;
+  object-fit: contain;
+  height: 100%;
+}
+.tela-carinho-compra-items-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  height: 70%;
+  justify-content: space-between;
+}
+.tela-carinho-compra-items-box-b1 {
+  display: flex;
+  justify-content: space-between;
+}
+.tela-carinho-compra-items-box-b2 {
+  display: flex;
+  justify-content: center;
+}
+.tela-carinho-compra-items-box-b2-quant {
+  margin-inline: 1rem;
+}
+.tela-carinho-compra-items-box-b2 p {
+  background-color: aqua;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tela-carinho-compra-items-fecho {
+  color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.tela-carinho-caixa {
+  border: 1px solid yellow;
+  height: 20%;
+}
+.tela-carinho-caixa-items {
+  border: 1px solid bisque;
+  margin-bottom: 2rem;
+}
+.tela-carinho-caixa-total {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
